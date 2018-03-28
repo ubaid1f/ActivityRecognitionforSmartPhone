@@ -28,3 +28,5 @@ c)	Data: The “Data” message shows that the message contains sensory data. Th
 
 viii)	SensorObject:
 This class is responsible for saving, getting, and setting of sensory data.
+
+Note: The "ARPhone_NEW.txt" and "ARWatch_NEW.txt" should be placed in the phone root directory or change the path in the code as per your requirements. 
