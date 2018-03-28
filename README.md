@@ -1,4 +1,4 @@
-# Development of Activity Recognition Application for Smartphone 
+# Activity Recognition Application for Smartphone 
 Activity Recognition application for smartphone collects sensory data only from accelerometer and extract features from it. Then classify the activities using Support Vector Machine (SVM) with Sequential Minimal Optimization (SMO). The purpose of using SVM with SMO was to solve the quadratic programming problem that we were facing while training of SVM and activity recognition with other classifiers. 
 The raw sensory data, extracted feature data and activity label are stored inside the smartphone as a text file. The activity recognition application processed the user activity on per second basis. But it stores and display the result on the screen when an activity change is identified. In this way the user will not see the same activity repeatedly. The description of each class is described as follows:
 
