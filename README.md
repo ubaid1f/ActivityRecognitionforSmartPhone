@@ -1,5 +1,7 @@
-# ActivityRecognitionforSmartPhone
-Activity Recognition application for smartphone collects sensory data only from accelerometer and extract features from it. Then classify the activity using WEKA classifier. The raw sensory data, extracted feature data and activity label are stored inside the smartphone as a text file. The activity recognition application processed the user activity on per second basis. But it stores and display the result on the screen when an activity change is identified. In this way the user will not see the same activity repeatedly. 
+# Development of Activity Recognition Application for Smartphone 
+Activity Recognition application for smartphone collects sensory data only from accelerometer and extract features from it. Then classify the activities using Support Vector Machine (SVM) with Sequential Minimal Optimization (SMO). The purpose of using SVM with SMO was to solve the quadratic programming problem that we were facing while training of SVM and activ-ity recognition with another classifier (such as decision tree). 
+The raw sensory data, extracted feature data and activity label are stored inside the smartphone as a text file. The activity recognition application processed the user activity on per second basis. But it stores and display the result on the screen when an activity change is identified. In this way the user will not see the same activity repeatedly. The description of each class is described as follows:
+
 i)	MainActivity
 This class is the main body of the application, which handles the overall process. It turns on and off the accelerometer, manages the file creation, feature extraction, classification, re-trieving the decision, and Bluetooth communication. The sensory data are collected every second with 50Hz.
 
@@ -13,7 +15,7 @@ iv)	FileWrite
 This class creates a folder, writes all the raw sensory data files and feature data files
 
 v)	FeatureExtraction
-This class extract features from the data. The extracted features are average, max, min, standard deviation, mean crossing, quartile, meanabs, and variance. 
+This class extract features from the data. The extracted features are average, max, min, standard deviation, mean crossing, quartile, mean of absolute element (meanabs), and vari-ance. 
 
 vi)	Classification
 This class classifies the activities, which includes sit, stand, lie, and walk. When the classifier is set by the main activity, it trains the classifier based on the preserved feature vector with activity labels.
